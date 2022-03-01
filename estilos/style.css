@@ -37,22 +37,18 @@ body{
     width: 30px;
     height: 30px;
     
-    /*     margin-left: 10px; margin-top: 20px;*/
 
 }
 
 .planetatierra{
     height: 60px;
     width: 60px;
-    /*    margin-left: 880px; */
 
 }
 
 .carrito{
     height: 30px;
     width: 30px;
-    
-    /*margin-left: 800px; margin-bottom: 15px;*/
 }
 
 .busqueda{
@@ -71,29 +67,7 @@ body{
     padding: 5px;
     display: inline-block;
 }
-/*
-.slide{
-    background-image: url(../imagenes/fondo.jpg);
-    background-repeat: repeat;
-    width: 100%;
-    height: 909px;
-    grid-area: bigimage;
-}
 
-
-.flechaizquierda{
-    width: 70px;
-    height: 70px;
-    margin-left: 0%;
-}
-
-.flechaderecha{
-    margin-left: 92%;
-    margin-top: 454px;
-    width: 70px;
-    height: 70px;
-}
-*/
 .productos{
     grid-area: productosdest;
 }
@@ -486,30 +460,20 @@ footer{
     text-align: center;
 }
 
-.motivo{
-    margin-top: 100px;
+.contact__container{
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
 }
 
-.nombre_apellido{
-    margin-left: 800px;
-    
+label{
+    padding: 10px;
 }
-
-
-.telefono{
-    margin-left: 863px;
-}
-
-.correo{
-    margin-left: 800px;
-}
-
-.pedido{
-    margin-left: 800px;
-}
-input{
-    margin-top: 30px;
+.ancho{
+    width: 20em;
 }
 
 .locales__titulo{
