@@ -1,0 +1,571 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
+
+/*
+selector {
+    propiedad:valor;
+}*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: #78ffd6;
+    height: 70px;
+    top: 0px;
+    display: grid;
+    grid-area: header;
+}
+
+.header__nav{
+    display: inline-block;
+}
+
+
+body{
+    background: #a8ff78;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #78ffd6, #a8ff78); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.menu{
+    width: 30px;
+    height: 30px;
+    
+    /*     margin-left: 10px; margin-top: 20px;*/
+
+}
+
+.planetatierra{
+    height: 60px;
+    width: 60px;
+    /*    margin-left: 880px; */
+
+}
+
+.carrito{
+    height: 30px;
+    width: 30px;
+    
+    /*margin-left: 800px; margin-bottom: 15px;*/
+}
+
+.busqueda{
+    height: 25px;
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.header__nav{
+    display: flex;
+    position: sticky;
+    grid-area: nav;
+}
+
+.header__nav--ul li{
+    padding: 5px;
+    display: inline-block;
+}
+/*
+.slide{
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: repeat;
+    width: 100%;
+    height: 909px;
+    grid-area: bigimage;
+}
+
+
+.flechaizquierda{
+    width: 70px;
+    height: 70px;
+    margin-left: 0%;
+}
+
+.flechaderecha{
+    margin-left: 92%;
+    margin-top: 454px;
+    width: 70px;
+    height: 70px;
+}
+*/
+.productos{
+    grid-area: productosdest;
+}
+.productos__titulo{
+    color: #3f2b96;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.productos__imagenes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    margin-top: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.productos__imagenes h1{
+    font-size: xx-large;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.productos__imagenes p{
+    font-size: larger;
+    width: 30%;
+    margin-left: 35%;
+    text-align: center;
+}
+
+.productos__imagenes img{
+    height: 200px;
+    width: 40%;
+}
+
+
+.productos__descripcion{
+    display: flex;
+}
+
+
+
+.productos__descripcion--segundo{
+    color: #3f2b96;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10px;
+    margin-left: 566px;
+}
+
+.productos__descripcion--tercero{
+    color: #3f2b96;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 10px;
+    margin-left: 563px;
+}
+
+.productos__imagen{
+    display: flex;
+}
+
+.productos__imagen--primero{
+    height: 210px;
+    width: 180px;
+    background-color: rgb(210, 210, 210);
+    margin-left: 170px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3f2b96;
+}
+
+.productos__imagen--segundo{
+    height: 210px;
+    width: 180px;
+    background-color: rgb(210, 210, 210);
+    margin-left: 499px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3f2b96;
+}
+
+.productos__imagen--tercero{
+    height: 210px;
+    width: 180px;
+    background-color: rgb(210, 210, 210);
+    margin-left: 499px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #3f2b96;
+}
+
+.banner{
+    background-color: rgb(19, 206, 102);
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    grid-area: banneruno;
+}
+
+.descuentos{
+    display: grid;
+    grid-area: descuentos;
+    
+}
+
+.descuentos__titulo{
+    text-align: center;
+    color: #3f2b96;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.descuentos__imagen{
+    display: flex;
+    display: grid;
+    grid-template-areas: 
+    "uno dos dos"
+    "uno tres cuatro";
+}
+
+.descuentos__imagen--uno{
+    background-color: rgb(19, 206, 102);
+    height: 600px;
+    width: 300px;
+    margin-top: 30px;
+    margin-left: 120px;
+    grid-area: uno;
+}
+
+.descuentos__imagen--dos{
+    background-color: rgb(19, 206, 102);
+    height: 200px;
+    width: 1050px;
+    margin-top: 30px;
+    margin-left: 300px;
+    grid-area: dos;
+}
+
+.descuentos__imagen--tres{
+    background-color: rgb(19, 206, 102);
+    height: 300px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 300px;
+    grid-area: tres;
+}
+
+.descuentos__imagen--cuatro{
+    background-color: rgb(19, 206, 102);
+    height: 300px;
+    width: 400px;
+    margin-top: 100px;
+    margin-left: 150px;
+    grid-area: cuatro;
+}
+
+.banner__dos{
+    background-color: rgb(19, 206, 102);
+    width: 100%;
+    height: 100px;
+    margin-top: 50px;
+    grid-area: bannerdos;
+}
+
+.categorias{
+    grid-area: categorias;
+}
+
+.categorias__titulo{
+    text-align: center;
+    color: #3f2b96;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-top: 30px;
+}
+
+.categorias__todas{
+    display: flex;
+    margin-top: 70px;
+}
+
+.categorias__todas--uno{
+    background-color: rgb(19, 206, 102);
+    height: 700px;
+    width: 500px;
+    margin-left: 103px;
+}
+
+.categorias__todas--dos{
+    background-color: rgb(19, 206, 102);
+    height: 700px;
+    width: 500px;
+    margin-left: 100px
+}
+
+.categorias__todas--tres{
+    background-color: rgb(19, 206, 102);
+    height: 700px;
+    width: 500px;
+    margin-left: 100px;
+}
+
+footer{
+    background-color: #8FFFCF;
+    height: 198px;
+    width: 100%;
+    margin-top: 228px;
+    display: flex;
+    grid-area: footer;
+}
+
+.productos__carrito{
+    display: flex;
+    margin-top: 100px;
+}
+
+.productos__carrito--articulos{
+    background-color: rgb(238, 238, 238);
+    width: 700px;
+    height: 511px;
+    margin-left: 200px;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+.productos__carrito--titulo{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.productos__carrito--compra{
+    background-color: #93FFCD;
+    width: 355px;
+    height: 511px;
+    margin-left: 440px;
+}
+
+.productos__carrito--resumen{
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.productos__carrito--subtotal{
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+.productos__carrito--envio{
+    font-size: larger;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 70px;
+    margin-left: 30px;
+}
+
+.productos__carrito--total{
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 200px;
+    margin-left: 30px;
+}
+
+.productos__carrito--comprar{
+    text-align: center;
+    font-size: x-large;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: bold;
+    margin-top: 30px;
+    text-decoration: underline;
+}
+
+.whatsapp{
+    height: 60px;
+    width: 60px;
+    position: fixed;
+    top: 800px;
+    
+    margin-top: 30px;
+    margin-left: 1830px;
+}
+
+footer{
+    grid-area: footer;
+    justify-content: end;
+}
+
+.footer__links{
+    display: flex;
+    text-align: start;
+    justify-content: left;
+}
+
+.footer__redes{
+    margin-top: 80px;
+    display: flex;
+    
+    
+}
+
+.footer__redes--twitter{
+    height: 40px;
+    width: 40px;
+    margin-left: 1300px;
+}
+
+.footer__redes--instagram{
+    height: 40px;
+    width: 40px;
+}
+
+.footer__redes--facebook{
+    height: 40px;
+    width: 40px;
+}
+
+
+.footer__logo{
+    height: 70px;
+    width: 70px;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+
+.footer__inicio{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 80px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.footer__contacto{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer__locales{
+    font-size: larger;
+    font-weight: bold;
+    margin-top: 80px;
+    margin-left: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.formulario__titulo{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.formulario__subtitulo{
+    font-size: larger;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+}
+
+.motivo{
+    margin-top: 100px;
+    text-align: center;
+}
+
+.nombre_apellido{
+    margin-left: 800px;
+    
+}
+
+
+.telefono{
+    margin-left: 863px;
+}
+
+.correo{
+    margin-left: 800px;
+}
+
+.pedido{
+    margin-left: 800px;
+}
+input{
+    margin-top: 30px;
+}
+
+.locales__titulo{
+    font-size: x-large;
+    font-weight: bold;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.locales__mapa{
+    display: flex;
+}
+
+.locales__mapa--ubicacion{
+    margin-top: 100px;
+    font-size: x-large;
+    font-weight: bolder;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-left: 190px;
+}
+
+.locales__mapa--uno{
+    margin-top: 100px;
+}
+
+.mapa{
+    background-color: rgb(19, 206, 102);
+    height: 600px;
+    width: 900px;
+    margin-top: 50px;
+    margin-left: 300px;
+}
+
+.locales{
+    margin-top: 100px;
+    margin-bottom: 500px;
+    margin-left: 20px;
+}
+
+/* Resposive Tablets */
+
+@media (max-width:500px){
+
+    body{
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "bigimage"
+        "productosdest"
+        "banneruno"
+        "descuentos"
+        "bannerdos"
+        "categorias"
+        "footer";
+    }
+
+}
+
+
