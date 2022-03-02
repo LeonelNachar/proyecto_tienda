@@ -484,34 +484,54 @@ label{
     margin-top: 40px;
 }
 
+
 .locales__mapa{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: auto;
 }
 
 .locales__mapa--ubicacion{
-    margin-top: 100px;
     font-size: x-large;
     font-weight: bolder;
     font-family: 'Josefin Sans', sans-serif;
-    margin-left: 190px;
+    margin-top: 30%;
+    display: flex;
+    justify-content: end;
 }
 
 .locales__mapa--uno{
     margin-top: 100px;
 }
 
+.ubimapa{
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    height: 600px;
+    width: auto;
+    
+}
+
+/*
 .mapa{
     background-color: rgb(19, 206, 102);
     height: 600px;
-    width: 900px;
+    width: 89%;
     margin-top: 50px;
-    margin-left: 300px;
+    margin-left: 100px;
 }
-
+*/
 .locales{
-    margin-top: 100px;
-    margin-bottom: 500px;
+    margin-top: 145px;
+    margin-bottom: 425px;
     margin-left: 20px;
+    border-radius: 10px 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 /* Resposive Tablets */
@@ -533,5 +553,4 @@ label{
     }
 
 }
-
 
