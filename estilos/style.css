@@ -380,28 +380,32 @@ footer{
 
 footer{
     grid-area: footer;
-    justify-content: end;
+    display: flex;
 }
 
 .footer__links{
     display: flex;
-    text-align: start;
-    justify-content: left;
+    justify-content: start;
+    text-align: center;
+    align-items: center;
 }
 
 .footer__redes{
-    margin-top: 80px;
     display: flex;
-    
-    
+    align-items: center;
+    justify-content: end;
+    align-content: flex-end;
 }
 
 .footer__redes--twitter{
     height: 40px;
     width: 40px;
-    margin-left: 1300px;
+    
+}.footwitter{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
 }
-
 .footer__redes--instagram{
     height: 40px;
     width: 40px;
@@ -412,11 +416,9 @@ footer{
     width: 40px;
 }
 
-
 .footer__logo{
     height: 70px;
     width: 70px;
-    margin-top: 60px;
     margin-left: 30px;
 }
 
@@ -424,7 +426,6 @@ footer{
 .footer__inicio{
     font-size: larger;
     font-weight: bold;
-    margin-top: 80px;
     margin-left: 80px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -432,7 +433,6 @@ footer{
 .footer__contacto{
     font-size: larger;
     font-weight: bold;
-    margin-top: 80px;
     margin-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -440,7 +440,6 @@ footer{
 .footer__locales{
     font-size: larger;
     font-weight: bold;
-    margin-top: 80px;
     margin-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
 }
@@ -483,36 +482,42 @@ label{
     text-align: center;
     margin-top: 40px;
 }
-
-
-.locales__mapa{
-    display: grid;
-    grid-template-columns: 1fr 1fr 2fr;
-    grid-template-rows: auto;
+.row{
+    width: 100%;
 }
+
+
 
 .locales__mapa--ubicacion{
     font-size: x-large;
     font-weight: bolder;
     font-family: 'Josefin Sans', sans-serif;
-    margin-top: 30%;
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .locales__mapa--uno{
     margin-top: 100px;
 }
-
-.ubimapa{
-    padding-right: 20px;
-    padding-top: 20px;
-    padding-left: 40px;
-    height: 600px;
-    width: auto;
-    
+.locales{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
 }
-
+.localesdiv{
+    display: flex;
+    justify-content: center;
+}
+.ubimap{
+    margin-top: 10px;
+}
+.divubimapa{
+    display: flex;
+    justify-content: center;
+}
 /*
 .mapa{
     background-color: rgb(19, 206, 102);
@@ -521,7 +526,7 @@ label{
     margin-top: 50px;
     margin-left: 100px;
 }
-*/
+
 .locales{
     margin-top: 145px;
     margin-bottom: 425px;
@@ -533,7 +538,7 @@ label{
     justify-content: center;
     text-align: center;
 }
-
+*/
 /* Resposive Tablets */
 
 @media (max-width:500px){
