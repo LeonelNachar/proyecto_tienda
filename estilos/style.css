@@ -216,8 +216,6 @@ body{
     
     height: 500px;
     width: 250px;
-    /*
-    margin-left: 120px;*/
     grid-row: 1 / 4;
     grid-column: 2 ;
     
@@ -228,50 +226,23 @@ body{
 
 .descuentos__imagen--dos{
     background-color: rgb(19, 206, 102);
-    /*
-    height: 200px;
-    width: 100%;*/
     
     grid-column: 5 / 8;
     grid-row: 1;
-    
-    /*
-    margin-top: 30px;
-    margin-left: 300px;
-    /*
-    grid-area: dos;*/
 }
 
 
 .descuentos__imagen--tres{
     background-color: rgb(19, 206, 102);
-    /*
-    height: 300px;
-    width: 400px;
-    */
     grid-column: 5;
     grid-row: 3;
-    
-    /*
-    margin-top: 100px;
-    margin-left: 300px;
-    /*
-    grid-area: tres;*/
 }
 
 .descuentos__imagen--cuatro{
     background-color: rgb(19, 206, 102);
-    /*
-    height: 300px;
-    width: 400px;*/
     grid-column: 7;
     grid-row: 3;
     padding: 30px;
-    /*
-    margin-top: 100px;
-    margin-left: 150px;
-    /*
-    grid-area: cuatro;*/
 }
 
 .banner__dos{
@@ -339,42 +310,6 @@ body{
     height: 800px;
     width: 400px;
 }
-/*
-.categorias__todas{
-    display: flex;
-    margin-top: 70px;
-    justify-content: space-between;
-    
-}
-
-
-.categorias__todas--uno{
-    background-color: rgb(19, 206, 102);
-    margin-left: 20px;
-    height: 800px;
-    width: 400px;
-    /*
-    margin-left: 103px;
-}
-
-.categorias__todas--dos{
-    background-color: rgb(19, 206, 102);
-    
-    height: 800px;
-    width: 400px;
-    /*
-    margin-left: 100px
-}
-
-.categorias__todas--tres{
-    background-color: rgb(19, 206, 102);
-    
-    height: 800px;
-    width: 400px;
-    /*
-    margin-left: 100px;
-}*/
-
 
 footer{
     background-color: #8FFFCF;
@@ -383,6 +318,7 @@ footer{
     margin-top: 228px;
     display: flex;
     grid-area: footer;
+    
 }
 
 .productos__carrito{
@@ -467,11 +403,13 @@ footer{
 footer{
     grid-area: footer;
     display: flex;
+    
 }
 
 .footer__links{
     display: flex;
     align-content: center;
+    text-decoration: none;
 }
 .contfoot{
     display: inline-block;
@@ -604,28 +542,7 @@ label{
     display: flex;
     justify-content: center;
 }
-/*
-.mapa{
-    background-color: rgb(19, 206, 102);
-    height: 600px;
-    width: 89%;
-    margin-top: 50px;
-    margin-left: 100px;
-}
 
-.locales{
-    margin-top: 145px;
-    margin-bottom: 425px;
-    margin-left: 20px;
-    border-radius: 10px 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
-*/
-/* Resposive Tablets */
 
 @media (max-width:500px){
 
@@ -645,115 +562,6 @@ label{
 
 }
 
-/*
-@media (min-width:480px){
-    .categorias__todas--uno{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        
-    }
-
-    .categorias__todas{
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    
-    }
-    
-    .categorias__todas--dos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-left: 20px;
-        
-    }
-
-    .categorias__todas--tres{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-left: 20px;
-        
-    }
-
-    
-
-}
-
-@media (min-width:764px){
-    .categorias__todas--uno{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-    .categorias__todas{
-        display: flex;
-        justify-content: center;
-        justify-items: center;
-        align-items: center;
-    
-    }
-    
-    .categorias__todas--dos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-left: 20px;
-    }
-
-    .categorias__todas--tres{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-left: 20px;
-    }
-
-    
-}
-
-@media (min-width: 992px){
-    .categorias__todas{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-    }
-
-    .categorias__todas--uno{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-    }
-
-    .categorias__todas--dos{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-left: 20px;
-    }
-
-    .categorias__todas--tres{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 50px;
-        margin-left: 20px;
-    }
-
-    
-}
-*/
 
 @media (max-width: 1200px){
     
@@ -822,4 +630,10 @@ label{
         grid-column: 6 / 10;
         grid-row: 7;
     }
+
+    .locubi{
+        display: flex;
+        justify-content: center;
+    }
 }
+
