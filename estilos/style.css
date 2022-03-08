@@ -491,12 +491,13 @@ footer{
     grid-template-columns: auto;
     padding: 10px;
 }
-.buttoncont{
+
+.divsendb{
     display: flex;
     justify-content: center;
 }
 
-button {
+.buttoncont {
     padding: 1.3em 3em;
     font-size: 12px;
     text-transform: uppercase;
@@ -512,14 +513,14 @@ button {
     outline: none;
 }
 
-button:hover {
+.buttoncont:hover {
     background-color: #2EE59D;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
 
-button:active {
+.buttoncont:active {
     transform: translateY(-1px);
 }
 
