@@ -1,0 +1,24 @@
+header{
+    background-color: #78ffd6;
+    height: 70px;
+    top: 0px;
+    display: grid;
+    grid-area: header;
+
+    .menu{
+        width: 30px;
+        height: 30px;
+        
+    
+    }
+    .planetatierra{
+        height: 60px;
+        width: 60px;
+    
+    }
+
+    .carrito{
+        height: 30px;
+        width: 30px;
+    }
+}
