@@ -1,7 +1,8 @@
 @import './general';
+@import 'fuentes';
 @import 'header';
 @import 'seccionuno';
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap');
+
 
 
 /*
@@ -201,6 +202,19 @@ selector {
     margin-top: 30px;
 }
 
+.categorias__todas{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    gap: 60px;
+}
+
+@mixin size ($width, $height){
+    height: $height;
+    width: $width;
+}
+
 .categorias__todas--uno{
     display: flex;
     justify-content: center;
@@ -208,41 +222,15 @@ selector {
     margin-bottom: 50px;
     background-color: rgb(19, 206, 102);
     margin-left: 20px;
-    height: 800px;
-    width: 400px;
-}
-
-.categorias__todas{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    gap: 60px;
-
+    @include size (400px, 800px)
 }
 
 .categorias__todas--dos{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    background-color: rgb(19, 206, 102);
-    margin-left: 20px;
-    height: 800px;
-    width: 400px;
+    @extend .categorias__todas--uno;
 }
 
 .categorias__todas--tres{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
-    margin-left: 20px;
-    background-color: rgb(19, 206, 102);
-    margin-left: 20px;
-    height: 800px;
-    width: 400px;
+    @extend .categorias__todas--uno;
 }
 
 footer{
@@ -365,13 +353,11 @@ footer{
 }
 
 .footer__redes--instagram{
-    height: 40px;
-    width: 40px;
+    @extend .footer__redes--twitter;
 }
 
 .footer__redes--facebook{
-    height: 40px;
-    width: 40px;
+    @extend .footer__redes--twitter;
 }
 
 .footer__logo{
@@ -385,7 +371,8 @@ footer{
     font-size: larger;
     font-weight: bold;
     margin-left: 80px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-decoration: none;
 }
 
 .footer__contacto{
@@ -393,13 +380,11 @@ footer{
     font-weight: bold;
     margin-left: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
 }
 
 .footer__locales{
-    font-size: larger;
-    font-weight: bold;
-    margin-left: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    @extend .footer__contacto;
 }
 
 .formulario__titulo{
@@ -507,6 +492,18 @@ label{
 .divubimapa{
     display: flex;
     justify-content: center;
+}
+
+$enlaces:(
+    inicio: rgb(62, 160, 58),
+    contacto: rgb(62, 160, 58),
+    locales: rgb(62, 160, 58),
+);
+
+@each $link, $color in $enlaces{
+    .footer__#{$link} {
+        color: $color;
+    }
 }
 
 
