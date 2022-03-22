@@ -59,7 +59,7 @@ header {
   position: fixed;
   transition: all 500ms ease;
   transform: translateX(-100%);
-  z-index: 2; }
+}
 
 #btn-menu:checked ~ .container-menu .cont-menu {
   transform: translateX(0%); }
@@ -353,12 +353,13 @@ footer {
 
 .productos__carrito {
   display: flex;
+  justify-content: space-between;
   margin-top: 100px; }
 
 .productos__carrito--articulos {
   background-color: #eeeeee;
-  width: 700px;
-  height: 511px;
+  height: 500px;
+  width: 30%;
   margin-left: 200px;
   font-size: x-large;
   font-weight: bold;
@@ -370,30 +371,34 @@ footer {
 
 .productos__carrito--compra {
   background-color: #93FFCD;
-  width: 355px;
+  width: 30%;
   height: 511px;
-  margin-left: 440px; }
+  display: flex;
+  display: inline-block;
+  align-content: space-between;
+}
 
 .productos__carrito--resumen {
   font-size: x-large;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
   text-align: center;
-  margin-top: 20px; }
+  margin-top: 20px; 
+}
 
 .productos__carrito--subtotal {
   font-size: larger;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  margin-top: 30px;
-  margin-left: 30px; }
+  margin-left: 30px;
+}
 
 .productos__carrito--envio {
   font-size: larger;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  margin-top: 70px;
-  margin-left: 30px; }
+  margin-left: 30px;
+}
 
 .productos__carrito--total {
   font-size: x-large;
@@ -407,7 +412,9 @@ footer {
   font-size: x-large;
   font-family: 'Josefin Sans', sans-serif;
   font-weight: bold;
-  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   text-decoration: underline; }
 
 .whatsapp {
@@ -582,6 +589,7 @@ label {
 .filtro {
   background: #00BCB4;
   box-shadow: rgba(0, 188, 180, 0.4) 0px 0px 20px 0px;
+  border-radius: 10px;
   margin-left: 30px;
   position: fixed;
   display: flex;
@@ -674,7 +682,15 @@ ul li:hover ul {
 @media (max-width: 500px) {
   body {
     display: grid;
-    grid-template-areas: "header" "nav" "bigimage" "productosdest" "banneruno" "descuentos" "bannerdos" "categorias" "footer"; } }
+    grid-template-areas: "header"
+ "nav"
+ "bigimage"
+ "productosdest"
+ "banneruno"
+ "descuentos"
+ "bannerdos"
+ "categorias"
+ "footer"; } }
 
 @media (max-width: 1200px) {
   .descuentos__imagen--dos {
