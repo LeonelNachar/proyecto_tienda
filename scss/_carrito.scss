@@ -1,71 +1,74 @@
-
 /* Inicio sección Carrito */
 
-.productos__carrito{
-    display: flex;
-    margin-top: 100px;
+.productos__carrito {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px; 
 }
 
-.productos__carrito--articulos{
-    background-color: rgb(238, 238, 238);
-    width: 700px;
-    height: 511px;
-    margin-left: 200px;
-    font-size: x-large;
-    font-weight: bold;
-    font-family: 'Josefin Sans', sans-serif;
-
+.productos__carrito--articulos {
+  background-color: #eeeeee;
+  width: 50%;
+  height: 511px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: x-large;
+  font-weight: bold;
+  font-family: 'Josefin Sans', sans-serif; 
+  min-width: 300px;
+  border-radius: 5%;
+  box-shadow: 3px 9px 20px #000;
+  margin-bottom: 40px;
 }
 
-.productos__carrito--titulo{
-    margin-top: 30px;
-    text-align: center;
+.productos__carrito--titulo {
+  margin-top: 30px;
+  text-align: center; }
+
+.productos__carrito--compra {
+  background-color: #93FFCD;
+  width: 20%;
+  height: 511px; 
+  margin-right: auto;
+  margin-left: auto;
+  min-width: 300px;
+  border-radius: 5%;
+  box-shadow: 3px 9px 30px #000;
 }
 
-.productos__carrito--compra{
-    background-color: #93FFCD;
-    width: 355px;
-    height: 511px;
-    margin-left: 440px;
+.productos__carrito--resumen {
+  font-size: x-large;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px; }
+
+.productos__carrito--subtotal {
+  font-size: larger;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  margin-left: 30px; }
+
+.productos__carrito--envio {
+  font-size: larger;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold; 
+  margin-left: 30px;
 }
 
-.productos__carrito--resumen{
-    font-size: x-large;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-}
+.productos__carrito--total {
+  font-size: x-large;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 200px;
+  margin-left: 30px; }
 
-.productos__carrito--subtotal{
-    font-size: larger;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    margin-top: 30px;
-    margin-left: 30px;
-}
-
-.productos__carrito--envio{
-    font-size: larger;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    margin-top: 70px;
-    margin-left: 30px;
-}
-
-.productos__carrito--total{
-    font-size: x-large;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    margin-top: 200px;
-    margin-left: 30px;
-}
-
-.productos__carrito--comprar{
-    text-align: center;
-    font-size: x-large;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: bold;
-    margin-top: 30px;
-    text-decoration: underline;
-}
+.productos__carrito--comprar {
+  text-align: center;
+  font-size: x-large;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  margin-top: 30px;
+  text-decoration: underline; }

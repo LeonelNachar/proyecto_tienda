@@ -2,103 +2,11 @@
 @import 'fuentes';
 @import 'header';
 @import 'index';
-@import 'catalogo';
+@import 'catalogo2';
 @import 'locales';
 @import 'contacto';
 @import 'carrito';
+@import 'login';
+@import 'registro';
 @import 'footer';
-
-
-@media (max-width:500px){
-
-    body{
-        display: grid;
-        grid-template-areas: 
-        "header"
-        "nav"
-        "bigimage"
-        "productosdest"
-        "banneruno"
-        "descuentos"
-        "bannerdos"
-        "categorias"
-        "footer";
-    }
-
-}
-
-
-@media (max-width: 1200px){
-    
-    .descuentos__imagen--dos{
-        grid-column: 4 / 9;
-    }
-
-    .descuentos__imagen--tres{
-        grid-column: 4 / 6;
-    }
-
-    .descuentos__imagen--cuatro{
-        grid-column: 7 / 9;
-    }
-}
-@media (max-width: 992px){
-    .descuentos__imagen--grid{
-        display: grid;
-
-    }
-
-    .descuentos__imagen--uno{
-        grid-column: 1;
-        grid-row: 1 / 4;
-    }
-
-    .descuentos__imagen--dos{
-        grid-column: 3/8;
-        grid-row: 1;
-    }
-    
-    .descuentos__imagen--tres{
-        grid-column: 3 / 5;
-        grid-row: 3;
-    }
-
-    .descuentos__imagen--cuatro{
-        grid-column: 6 / 8;
-        grid-row: 3;
-    }
-}
-
-@media (max-width: 768px){
-    .descuentos__imagen--grid{
-        display: grid;
-        grid-template-columns: repeat(12,1fr);
-        grid-template-rows: repeat(7, 1fr);
-    }
-
-    .descuentos__imagen--uno{
-        width: 250px;
-        grid-column: 4 / 7;
-    }
-    
-    .descuentos__imagen--dos{
-        grid-column: 1 / 10;
-        grid-row: 5;
-    }
-
-    .descuentos__imagen--tres{
-        grid-column: 1 / 5;
-        grid-row: 7;
-    }
-
-    .descuentos__imagen--cuatro{
-        grid-column: 6 / 10;
-        grid-row: 7;
-    }
-
-    .locubi{
-        display: flex;
-        justify-content: center;
-    }
-}
 

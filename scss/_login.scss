@@ -1,0 +1,102 @@
+.bodyLogin{
+    background-color: #a8ff78;
+  }
+  
+  .login_sec{  
+    width: 100%;  
+    display: flex;  
+    flex-direction: column;  
+    justify-content: center;  
+    align-items: center;  
+    height: auto;  
+  }  
+  
+  .container_log{  
+    width: 150px;  
+    height: 0px;
+    background:#0bc275;
+    border-radius: 10px;
+    margin-top: 8em;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    transition: background-color, width 1s;
+  }  
+  
+  .container_log:hover{
+    content: "";
+    background:#d078ff;
+    width: 500px;
+    height: 500px;
+    top: 0;
+    left: 0;
+  }
+  
+  .heading h1{  
+    font-size: 30px;  
+    font-family: poppins;  
+    letter-spacing: 1px;  
+    text-align: center;  
+  }  
+  .heading .apple_id{  
+    padding: 5px;  
+    background: #d078ff;  
+    color: #ffff;  
+    border: 2px solid transparent;  
+    border-radius: 4px;  
+    cursor: pointer;  
+    transition: .3s ;  
+    letter-spacing: 1px;  
+  }  
+  .inp-items{  
+    margin: 30px 0;  
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  
+  }  
+  .inp-items label{  
+    display: flex;  
+    flex-direction: column;  
+    font-size: 14px;  
+    padding: 10px 0;  
+  }  
+  label .inp{  
+    margin: 10px 0;  
+    padding: 7px;  
+    border-radius: 7px;  
+    border: 1px solid rgb(218, 218, 218);  
+    transition: .1s;  
+    outline: 1px solid #fff;  
+    width: 230px;  
+  }  
+  label .inp:focus{  
+    outline: 1px solid #406cc4;  
+    border: 1px solid #406cc4;  
+  }  
+  .inline{  
+    display: flex;  
+    justify-content: space-between;  
+  }  
+  .inline .pass_fgt{  
+    color: #406cc4;  
+    text-decoration: underline;  
+    cursor: pointer;  
+  }  
+  .submit_btn{  
+    background: #ff78eb;  
+    color: #fff;  
+    padding: 7px;  
+    border: 2px solid #fff;  
+    border-radius: 8px;  
+    font-size: 17px;  
+    transition: .2s;  
+    cursor: pointer;  
+  }  
+  .submit_btn:hover{  
+    background: #78ff8c;
+    color: #ffffff;  
+    border: 2px solid #ff78eb;  
+  }  
+  
+  .crearCuenta{
+    display: flex;
+    justify-content: flex-end;
+  }
